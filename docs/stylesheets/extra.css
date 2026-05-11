@@ -1,0 +1,16 @@
+/* Vertical spacing between ordered list items (tight lists in source) */
+.md-typeset ol > li + li,
+.md-typeset ul > li + li {
+  margin-top: 0.5em;
+}
+
+/* Compact first table only (Regras da Meta) + hide its empty trailing row */
+.md-typeset table:first-of-type td,
+.md-typeset table:first-of-type th {
+  padding: 0.35em 0.75em;
+  line-height: 1.35;
+}
+
+.md-typeset table:first-of-type tr:not(:has(td:not(:empty))) {
+  display: none;
+}
