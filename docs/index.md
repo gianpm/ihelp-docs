@@ -1,4 +1,4 @@
-﻿# 📘 Documentação API iHelpChat + Meta Rules
+# 📘 Documentação API iHelpChat + Meta Rules
 
 
 ---
@@ -886,6 +886,4 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
 
 ---
 
-*Documentação atualizada • v1.2 • iHelpChat API* 🚀
-
-
+*Documentação atualizada: 2026-05-11 13:23*

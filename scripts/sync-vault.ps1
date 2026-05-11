@@ -61,8 +61,10 @@ foreach ($name in $imageNames) {
     $copied++
 }
 
-# 5. Write transformed markdown
-Set-Content -Path $OutFile -Value $content -Encoding utf8
+# 5. Append last-sync footer + write transformed markdown
+$nowStamp = Get-Date -Format 'yyyy-MM-dd HH:mm'
+$content = $content.TrimEnd() + "`r`n`r`n---`r`n`r`n*Documentação atualizada: $nowStamp*`r`n"
+[System.IO.File]::WriteAllText($OutFile, $content, (New-Object System.Text.UTF8Encoding $false))
 Write-Host ("Wrote    {0}" -f $OutFile)
 Write-Host ("Images   {0} copied, {1} missing" -f $copied, $missing.Count)
 if ($missing.Count -gt 0) {
