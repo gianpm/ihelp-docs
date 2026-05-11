@@ -1,4 +1,4 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 <#
 .SYNOPSIS
   Sync iHelp API doc from Obsidian vault into MkDocs docs/.
@@ -90,6 +90,6 @@ $PublishedUrl
 
 > Documentação atualizada: $stamp
 "@
-    Set-Content -Path $stubPath -Value $stubContent -Encoding utf8
+    [System.IO.File]::WriteAllText($stubPath, $stubContent, (New-Object System.Text.UTF8Encoding $false))
     Write-Host "Stamped  $stubPath ($stamp)"
 }
