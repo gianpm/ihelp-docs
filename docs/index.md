@@ -876,9 +876,6 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
     "atendimentoId":null
 }
 ```
----
-
-
 
 ---
 
