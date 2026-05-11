@@ -23,7 +23,7 @@ message:400 - "{\"mensagem\":\"Object reference not set to an instance of an obj
 
 ## 🔍 Ver Logs de Erro
 
-Para verificar por que o envio de templates esteja falhando, orientar o cliente a **adicionar nosso webhook logger no painel Gupshup e ativar todos os eventos**:
+Para verificar por que o envio de templates está falhando, deve **adicionar nosso webhook logger no painel Gupshup e ativar todos os eventos**:
 
 ###  1. Adicionar Webhook Logger
 ```
@@ -886,4 +886,4 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
 
 ---
 
-*Documentação atualizada: 2026-05-11 13:23*
+*Documentação atualizada: 2026-05-11 13:29*
