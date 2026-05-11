@@ -12,7 +12,9 @@
 param(
   [string]$VaultRoot   = 'C:\Users\Gian Peres\Documents\myvault',
   [string]$SourceFile  = 'ihelp api\A_src_Docs API iHelp.md',
-  [string]$MediaDir    = 'z_Media'
+  [string]$MediaDir    = 'z_Media',
+  [string]$StubFile    = 'ihelp api\A_Docs API iHelp.md',
+  [string]$PublishedUrl = 'https://gianpm.github.io/ihelp-docs/'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -76,3 +78,18 @@ Get-ChildItem -Path $AssetsDir -File | Where-Object { -not $keep.Contains($_.Nam
 }
 
 Write-Host "Done."
+
+# 7. Update stub note in vault with last-sync timestamp
+if ($StubFile) {
+    $stubPath = Join-Path $VaultRoot $StubFile
+    $stamp = Get-Date -Format 'yyyy-MM-dd HH:mm'
+    $stubContent = @"
+# 📘 Documentação API iHelpChat
+
+$PublishedUrl
+
+> Documentação atualizada: $stamp
+"@
+    Set-Content -Path $stubPath -Value $stubContent -Encoding utf8
+    Write-Host "Stamped  $stubPath ($stamp)"
+}
