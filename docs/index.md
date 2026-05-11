@@ -10,12 +10,14 @@
 | ------------------ | ------------------------------------------------------------------------------------------ |
 | `❌ \n em params`   | Não pode enviar quebras de linha dentro de variáveis de templates                          |
 | `❌ Link em params` | Links devem ser enviados **apenas** em parâmetros de **URL Button** (templates com botões) |
-|                    |                                                                                            |
-Erro:
+
+**Erro:**
+
 ```json
 message:400 - "{\"mensagem\":\"Object reference not set to an instance of an object.\"}"
 ```
-Causa: Ocorre quando você tenta enviar um template ID que não existe/não foi criado naquele canal (ex: tentar enviar um template do canal A com o canal B)
+
+**Causa:** Ocorre quando você tenta enviar um template ID que não existe/não foi criado naquele canal (ex: tentar enviar um template do canal A com o canal B)
 
 ---
 
@@ -841,6 +843,7 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
 ```
 
 ###  Mensagem de texto com params
+
 ```json
 {
     "contactList": ["5588882222"],
@@ -857,6 +860,7 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
 }
 ```
 ###  Mensagem de texto sem params
+
 ```json
 {
     "contactList":["5517936189969"],
