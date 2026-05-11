@@ -17,7 +17,7 @@
 message:400 - "{\"mensagem\":\"Object reference not set to an instance of an object.\"}"
 ```
 
-**Causa:** Ocorre quando você tenta enviar um template ID que não existe/não foi criado naquele canal (ex: tentar enviar um template do canal A com o canal B)
+**Causa:** Ocorre quando você tenta enviar um formato errado de body JSON, ou  template ID que não existe/não foi criado naquele canal (ex: tentar enviar um template do canal A com o canal B)
 
 ---
 
