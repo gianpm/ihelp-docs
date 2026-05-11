@@ -11,7 +11,7 @@
 #>
 param(
   [string]$VaultRoot   = 'C:\Users\Gian Peres\Documents\myvault',
-  [string]$SourceFile  = 'ihelp api\A_Docs API iHelp.md',
+  [string]$SourceFile  = 'ihelp api\A_src_Docs API iHelp.md',
   [string]$MediaDir    = 'z_Media'
 )
 
