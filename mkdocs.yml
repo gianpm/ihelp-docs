@@ -1,6 +1,6 @@
 site_name: API iHelpChat
 site_description: Documentação API iHelpChat + Meta Rules
-site_url: https://docs.ihelpchat.com/
+site_url: https://gianpm.github.io/ihelp-docs/
 docs_dir: docs
 
 theme:
