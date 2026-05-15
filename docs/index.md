@@ -886,4 +886,4 @@ https://apiv3.ihelpchat.com/api/v2/customers/add-new-call
 
 ---
 
-*Documentação atualizada: 2026-05-11 13:29*
+*Documentação atualizada: 2026-05-15 13:37*
